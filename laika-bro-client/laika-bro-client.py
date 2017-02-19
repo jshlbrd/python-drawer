@@ -13,7 +13,6 @@ The queue where to-be-scanned file paths go.
 '''
 job_queue = mp.Queue()
 
-
 '''
 Function that takes a Bro supplied filename
 and turns it into JSON metadata for Laika BOSS.
@@ -60,7 +59,7 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--fpath', action='store', dest="fpath", default='',
             help='Path to the monitored directory. Files in this directory will be deleted. (No default)')
     parser.add_argument('-w', '--workers', action='store', type=int, dest='num_workers',
-            help='Number of worker processes to use during file transfer. (Default: number of cores available on system * 2)')
+            help='Number of worker processes to use during file transfer. (Default: number of cores available on system.)')
     args = parser.parse_args()
     
     if args.num_workers:
