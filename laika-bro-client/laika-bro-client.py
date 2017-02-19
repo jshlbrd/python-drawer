@@ -81,7 +81,7 @@ if __name__ == '__main__':
     parser.add_argument('-w', '--workers', action='store', type=int, dest="num_processors",
             help='Number of worker processes to use during file transfer. (Default: number of cores available on system * 2)')
     parser.add_argument('-st', '--schedule-time', action='store', type=int, dest="schedule_time", default=5,
-            help='Number of minutes for the scheduler to check for new files. (Default: Every 5 minutes)')
+            help='Number of minutes for the scheduler to kick off new file transfers. (Default: Every 5 minutes)')
     parser.add_argument('-wt', '--worker-timeout', action='store', type=int, dest="worker_timeout", default=30,
             help='Number of seconds for each worker process to timeout if it does not finish file transfer (this assists with reaping zombie processes). (Default: 60 seconds)')
     args = parser.parse_args()
