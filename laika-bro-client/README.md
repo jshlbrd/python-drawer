@@ -1,6 +1,6 @@
 laika-bro-client.py
 ================
-This Python script is a client-side component for sending files from a Bro network sensor to a Laika BOSS cluster running the laikad service in asynchronous mode. The script uses one external library (watchdog) that can be installed via pip. 
+This Python script is a client-side component for sending files from a Bro network sensor to a Laika BOSS cluster running the laikad service in asynchronous mode. The script uses two external libraries (watchdog and schedule) that can be installed via pip. 
 
 TODO
 ---
