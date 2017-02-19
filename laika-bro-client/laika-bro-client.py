@@ -72,7 +72,7 @@ def kick(broker,num_workers,worker_timeout):
 if __name__ == '__main__':
     parser = ArgumentParser(description=
             '''
-            Prototype client to send files from a Bro sensor to a server running Laika BOSS (laikad). This script monitors a directory for files extracted by Br and sends them to the Laika server. The laikad service is expected to be in asynchronous mode. This script requires a companion Bro script that extracts files with a specific filename pattern to a directory of the user's choice. Files will be deleted from the Bro sensor after being sent to the Laika server.
+            Prototype client to send files from a Bro sensor to a server running Laika BOSS (laikad). This script monitors a directory for files extracted by Bro and sends them to the Laika server. The laikad service is expected to be in asynchronous mode. This script requires a companion Bro script that extracts files with a specific filename pattern to a directory of the user's choice. Files will be deleted from the Bro sensor after being sent to the Laika server.
             ''')
     parser.add_argument('-a', '--address', action='store', dest='broker', default='tcp://localhost:5558',
             help='Laika BOSS broker address. (Default: tcp://localhost:5558)')
