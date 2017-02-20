@@ -7,3 +7,4 @@ TODO
 
 * Add error checking for fail states
 * Add client-side logging of scheduled job status (execution time, number of files sent, etc.)
+* Daemon support
